@@ -5,6 +5,7 @@ const route = require("./Routes/routes");
 const ejs = require("ejs").__express;
 const fs = require("fs");
 var https = require("https");
+const db = require("./db");
 
 const PORT = process.env.PORT || 3001;
 

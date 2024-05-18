@@ -13,13 +13,13 @@
     />
     <meta name="author" content="Dreamguys - Bootstrap Admin Template" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Sign-up - Pos admin template</title>
+    <title>Sign-up - Smartstock</title>
 
     <!-- Favicon -->
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/img/favicon.png"
+      href="assets/img/smart_go.png"
     />
 
     <!-- Bootstrap CSS -->
@@ -43,43 +43,47 @@
           <div class="login-content">
             <div class="login-userset">
               <div class="login-logo logo-normal">
-                <img src="assets/img/logo.png" alt="img" />
+                <img src="assets/img/smart_log.png" alt="img" />
               </div>
               <a href="dashboard" class="login-logo logo-white">
-                <img src="assets/img/logo-white.png" alt="" />
+                <img src="assets/img/smart_log.png" alt="" />
               </a>
               <div class="login-userheading">
-                <h3>Create an Account</h3>
+                <h3>Create a Smartstock Account</h3>
                 <h4>Continue where you left off</h4>
               </div>
-              <div class="form-login">
-                <label>Full Name</label>
-                <div class="form-addons">
-                  <input type="text" placeholder="Enter your full name" />
-                  <img src="assets/img/icons/users1.svg" alt="img" />
+              <form action="dashboard" method="post">
+                <div class="form-login">
+                  <label>Full Name</label>
+                  <div class="form-addons">
+                    <input type="text" name="full_name" placeholder="Enter your full name" required />
+                    <img src="assets/img/icons/users1.svg" alt="img" />
+                  </div>
                 </div>
-              </div>
-              <div class="form-login">
-                <label>Email</label>
-                <div class="form-addons">
-                  <input type="text" placeholder="Enter your email address" />
-                  <img src="assets/img/icons/mail.svg" alt="img" />
+                <div class="form-login">
+                  <label>Email</label>
+                  <div class="form-addons">
+                    <input type="email" name="email" placeholder="Enter your email address" required />
+                    <img src="assets/img/icons/mail.svg" alt="img" />
+                  </div>
                 </div>
-              </div>
-              <div class="form-login">
-                <label>Password</label>
-                <div class="pass-group">
-                  <input
-                    type="password"
-                    class="pass-input"
-                    placeholder="Enter your password"
-                  />
-                  <span class="fas toggle-password fa-eye-slash"></span>
+                <div class="form-login">
+                  <label>Password</label>
+                  <div class="pass-group">
+                    <input
+                      type="password"
+                      name="password"
+                      class="pass-input"
+                      placeholder="Enter your password"
+                      required
+                    />
+                    <span class="fas toggle-password fa-eye-slash"></span>
+                  </div>
                 </div>
-              </div>
-              <div class="form-login">
-                <a class="btn btn-login">Sign Up</a>
-              </div>
+                <div class="form-login">
+                  <button type="submit" class="btn btn-login">Sign Up</button>
+                </div>
+              </form>
               <div class="signinform text-center">
                 <h4>
                   Already a user?
