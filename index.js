@@ -38,4 +38,4 @@ app.use("/", route);
 
 // // For Development use
 const http = require("http").createServer(app);
-http.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+http.listen(PORT, () => console.log(`Server running on port http://localhost:${PORT}`));
